@@ -5,6 +5,7 @@ Above command will run the server by default on port 3000 which can be changed f
 Description of Solution - 
 
 Used NodeJS and express as a framework to builder the server/endpoints. The application is config driven, application check's for cluster enablement from a config value (disabled by default as using server to store the data which will cause inconsistency in data across different clusters). 
+The service is taken care at a logic layer by creating a logic layer(database class) and a base class which would be called by each individual service 
 
 Bootstraping used to load/boot up initial part of the server such as defining global variable's, etc. 
 
