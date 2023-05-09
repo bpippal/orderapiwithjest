@@ -21,6 +21,13 @@ POST /order -> Create's an order
 PUT /order/:id -> Update's an order by id
 DELETE /order/:id -> Delete's an order by id
 
+
+Test suite's created and executed through JEST and SuperTest
+To run test suite -> npm test
+Different test scenario's defined in tests directory
+
+
+
 If this project was to be pushed to production - 
 Handling of route's could have been done in a better way. 
 The response handling can be done by a common utility which would build a proper structure by resolving all the data (error code) and sending that as a final response. 
