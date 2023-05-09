@@ -14,6 +14,12 @@ Most of the assumptions are client based assumptions's, ignoring data validation
 
 The logic is written at a service layer which call's base layer which can be used to log in-turn other metric's such as delay's, perform specific functions on service's and so on.
 
+Different endpoint's exposed - 
+GET /orderall -> Fetch's all the order
+GET /order/:id -> Fetch's order by id, if id is not found/or is invalid throw's an error
+POST /order -> Create's an order
+PUT /order/:id -> Update's an order by id
+DELETE /order/:id -> Delete's an order by id
 
 If this project was to be pushed to production - 
 Handling of route's could have been done in a better way. 
